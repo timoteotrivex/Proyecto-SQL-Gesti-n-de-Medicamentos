@@ -1,0 +1,22 @@
+CREATE TABLE Medicamentos (
+    MedicamentoID INT PRIMARY KEY,
+    Nombre NVARCHAR(100),
+    Laboratorio NVARCHAR(50),
+    Categoria NVARCHAR(50),
+    Precio DECIMAL(6,2),
+    Stock INT,
+    FechaCaducidad DATE,
+    RequiereReceta NVARCHAR(2)
+);
+
+INSERT INTO Medicamentos VALUES
+(1, 'Paracetamol 500mg', 'Genfar', 'Analgésico', 3.50, 120, '2026-05-10', 'No'),
+(2, 'Amoxicilina 500mg', 'Sandoz', 'Antibiótico', 7.80, 80, '2025-12-01', 'Sí'),
+(3, 'Ibuprofeno 400mg', 'Bayer', 'Antiinflamatorio', 5.60, 50, '2026-08-15', 'No'),
+(4, 'Omeprazol 20mg', 'Pfizer', 'Gastrointestinal', 4.20, 60, '2027-01-30', 'No'),
+(5, 'Losartán 50mg', 'Novartis', 'Cardiovascular', 6.00, 40, '2025-11-10', 'Sí'),
+(6, 'Metformina 850mg', 'Merck', 'Antidiabético', 5.00, 100, '2026-03-20', 'Sí'),
+(7, 'Loratadina 10mg', 'Genfar', 'Antialérgico', 3.00, 75, '2026-12-12', 'No'),
+(8, 'Salbutamol Inhalador', 'GlaxoSmithKline', 'Respiratorio', 12.00, 30, '2025-10-30', 'Sí'),
+(9, 'Diazepam 10mg', 'Roche', 'Psicotrópico', 8.50, 25, '2026-06-01', 'Sí'),
+(10, 'Acetaminofén Infantil', 'Tecnoquímicas', 'Pediátrico', 4.00, 90, '2027-04-22', 'No');
